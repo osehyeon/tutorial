@@ -1,3 +1,4 @@
 **/bazel-bin/
 **/bazel-out/
 **/tensorflow_src
+**/build

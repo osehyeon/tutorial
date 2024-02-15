@@ -1,0 +1,16 @@
+# SConstruct 파일
+import os
+
+# 환경 변수 설정
+env = Environment(CXXFLAGS=['-std=c++11', '-O2', '-Wall'],
+                  CPPPATH=['include'])
+
+# 빌드 디렉토리 설정
+VariantDir('build', 'src', duplicate=0)
+
+# 프로그램 빌드
+env.Program(target='build/hello', source='src/hello.cpp')
+
+# 필요한 경우 라이브러리 링크
+# env.Append(LIBPATH=['lib'])
+# env.Append(LIBS=['라이브러리명'])
