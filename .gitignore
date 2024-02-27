@@ -2,3 +2,6 @@
 **/bazel-out/
 **/tensorflow_src
 **/build
+**/*.onnx
+**/*.tar
+**/model
